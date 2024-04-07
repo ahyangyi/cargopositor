@@ -60,6 +60,8 @@ Remove all Cargopositor-specific behaviour voxels from the object. This is
 useful for producing the "base" object, so you do not need two files for
 "with cargo" and "without cargo" models.
 
+Supports recolouring.
+
 #### scale
 
 Scales the input across the cargo area. This is most useful for bulk cargo
@@ -215,6 +217,18 @@ in the operation. This is useful when using repeat to generate textures.
 When using repeat, you can set all voxels of the original object that are *not* part of the
 clip area to 255 by setting `mask_original` to `true`. This is useful for generating
 overlay sprites with GoRender, by rendering just the pixels which should be overlaid.
+
+#### Mask New
+
+Similar to `mask_original`, but this will instead set all voxels of the *new* object to 255.
+This is useful when you want to overlay things to allow rendering sprites occluded by other
+objects.
+
+#### Flip X Axis
+
+When using repeat, you can set `flip_x` to `true`, and the object will be composited flipped
+in X. This is useful when compositing objects which are intended to be overlaid with the
+rear of another object.
 
 #### Recolouring
 
