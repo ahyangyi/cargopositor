@@ -2,8 +2,8 @@ package compositor
 
 import (
 	"github.com/ahyangyi/cargopositor/internal/utils"
-	"github.com/mattkimber/gandalf/geometry"
-	"github.com/mattkimber/gandalf/magica"
+	"github.com/ahyangyi/gandalf/geometry"
+	"github.com/ahyangyi/gandalf/magica"
 	"log"
 	"math"
 	"strings"

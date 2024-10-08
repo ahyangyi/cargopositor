@@ -3,8 +3,8 @@ package compositor
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/mattkimber/gandalf/geometry"
-	"github.com/mattkimber/gandalf/magica"
+	"github.com/ahyangyi/gandalf/geometry"
+	"github.com/ahyangyi/gandalf/magica"
 	"io"
 	"io/ioutil"
 	"os"
